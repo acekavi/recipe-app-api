@@ -1,2 +1,2 @@
 # recipe-app-api
-Recipe App Api with Django Rest
+Recipe App Source code
