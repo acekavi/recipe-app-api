@@ -46,11 +46,11 @@ class Tag(models.Model):
     name = models.CharField(max_length=255)
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,
+        on_delete=models.CASCADE
     )
 
     def __str__(self):
-        return "{} - {}".format(self.name, self.user)
+        return self.name
 
 
 class Ingredient(models.Model):
@@ -58,7 +58,7 @@ class Ingredient(models.Model):
     name = models.CharField(max_length=255)
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,
+        on_delete=models.CASCADE
     )
 
     def __str__(self):

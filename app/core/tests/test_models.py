@@ -69,7 +69,7 @@ class ModelTest(TestCase):
             user=sample_user(),
             title="Pancakes",
             time_minutes=5,
-            price=5.00,
+            price=5.00
         )
 
         self.assertTrue(str(recipe), recipe.title)
